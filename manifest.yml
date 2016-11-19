@@ -1,0 +1,12 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: ChatbotDemo17
+  host: ChatbotDemo17
+  disk_quota: 1024M
+  services:
+  - Conversation-zm
+  - Text to Speech-cz
+  - Speech to Text-8e
